@@ -10,6 +10,7 @@ public class BankAccount extends HomeAddress {
 	ArrayList<String>transaction=new ArrayList<String>();
 	public ArrayList<String> getTransaction() {
 		return transaction;
+		// System.out.println("hi");
 	}
 	public void setTransaction(ArrayList<String> tansaction) {
 		this.transaction = tansaction;
