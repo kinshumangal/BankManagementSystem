@@ -1,3 +1,4 @@
+
 package com.bank;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -123,12 +124,12 @@ public class BankAccount extends HomeAddress {
 		transaction.add("Transaction ID: "+transId+" Debited Rs."+value+" CLRBal Rs."+finalBalance+" Date: "+currentDate);
 		System.out.println("Your account has been Debited Rs."+value+" CLRBal: Rs."+finalBalance+". Transactionn id is "+transId+".\nThank You.\n");
 		if(account.getAccountType().equalsIgnoreCase("current")){
-			finalBalance=account.getBalance()-50;
-			account.setBalance(finalBalance);
-		    currentDate=new Date();
-			transId="D"+account.getAccountNumber().substring(0, 4)+(formatter.format(currentDate).replace(" ",""));
-			transaction.add("Transaction ID: "+transId+" Debited Rs."+50.0f+" CLRBal Rs."+finalBalance+" Date: "+currentDate);
-			System.out.println("Your account has been Debited Rs."+50.0f+" CLRBal: Rs."+finalBalance+". Transactionn id is "+transId+".\nThank You.\n");
+//			finalBalance=account.getBalance()-50;
+//			account.setBalance(finalBalance);
+//		    currentDate=new Date();
+//			transId="D"+account.getAccountNumber().substring(0, 4)+(formatter.format(currentDate).replace(" ",""));
+//			transaction.add("Transaction ID: "+transId+" Debited Rs."+50.0f+" CLRBal Rs."+finalBalance+" Date: "+currentDate);
+//			System.out.println("Your account has been Debited Rs."+50.0f+" CLRBal: Rs."+finalBalance+". Transactionn id is "+transId+".\nThank You.\n");
 		}
 		if(finalBalance<account.getMinBalance()) {
 			if(account.getAccountType().equalsIgnoreCase("saving")){
