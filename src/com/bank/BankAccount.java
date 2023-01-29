@@ -11,7 +11,6 @@ public class BankAccount extends HomeAddress {
 	ArrayList<String>transaction=new ArrayList<String>();
 	public ArrayList<String> getTransaction() {
 		return transaction;
-		// System.out.println("hi");
 	}
 	public void setTransaction(ArrayList<String> tansaction) {
 		this.transaction = tansaction;
@@ -124,12 +123,21 @@ public class BankAccount extends HomeAddress {
 		transaction.add("Transaction ID: "+transId+" Debited Rs."+value+" CLRBal Rs."+finalBalance+" Date: "+currentDate);
 		System.out.println("Your account has been Debited Rs."+value+" CLRBal: Rs."+finalBalance+". Transactionn id is "+transId+".\nThank You.\n");
 		if(account.getAccountType().equalsIgnoreCase("current")){
+<<<<<<< HEAD
 //			finalBalance=account.getBalance()-50;
 //			account.setBalance(finalBalance);
 //		    currentDate=new Date();
 //			transId="D"+account.getAccountNumber().substring(0, 4)+(formatter.format(currentDate).replace(" ",""));
 //			transaction.add("Transaction ID: "+transId+" Debited Rs."+50.0f+" CLRBal Rs."+finalBalance+" Date: "+currentDate);
 //			System.out.println("Your account has been Debited Rs."+50.0f+" CLRBal: Rs."+finalBalance+". Transactionn id is "+transId+".\nThank You.\n");
+=======
+			//finalBalance=account.getBalance()-50;
+			/account.setBalance(finalBalance);
+		 //   currentDate=new Date();
+		//	transId="D"+account.getAccountNumber().substring(0, 4)+(formatter.format(currentDate).replace(" ",""));
+			//transaction.add("Transaction ID: "+transId+" Debited Rs."+50.0f+" CLRBal Rs."+finalBalance+" Date: "+currentDate);
+			//System.out.println("Your account has been Debited Rs."+50.0f+" CLRBal: Rs."+finalBalance+". Transactionn id is "+transId+".\nThank You.\n");
+>>>>>>> 7bfc9bcc4f59437eae5dfa78bfc940aad7c9562c
 		}
 		if(finalBalance<account.getMinBalance()) {
 			if(account.getAccountType().equalsIgnoreCase("saving")){
